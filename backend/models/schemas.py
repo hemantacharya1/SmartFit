@@ -9,16 +9,6 @@ from sqlalchemy.orm import relationship
 class Base(DeclarativeBase):
     pass
 
-class Users(Base):
-    __tablename__ = 'users'
-    id:Mapped[int] =  mapped_column(primary_key=True)
-    username:Mapped[str] = mapped_column(String(50))
-    email:Mapped[str] = mapped_column(String(50))
-    password:Mapped[str] = mapped_column(String(50))
-    age:Mapped[int] = mapped_column((50))
-    weight:Mapped[int] 
-    height:Mapped[int]
-    goals:Mapped[str]
 
 class Workouts(Base):
     __tablename__ = 'workouts'
