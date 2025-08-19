@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 from sqlmodel import select
-from database import SessionDep
+from ..database import SessionDep
 from ..models.schemas import Nutritions 
 
 router = APIRouter()

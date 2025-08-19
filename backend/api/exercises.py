@@ -1,6 +1,6 @@
 from fastapi import APIRouter, HTTPException
 from sqlmodel import select
-from database import SessionDep
+from ..database import SessionDep
 from ..models.schemas import Exercises
 
 router = APIRouter()
